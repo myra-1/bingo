@@ -1,0 +1,38 @@
+header {
+  height: 150px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+.fun-fact-spot {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#next-button {
+  grid-column: 1;
+  grid-row: 3;
+  height: 50px;
+}
+
+.not-yet-called {
+  grid-column: 3;
+}
+
+.have-called {
+  grid-column: 4;
+}
+
+.not-yet-called ol {
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  /* thinking this would make it adjust as items move from one list to the other? MAYBE? */
+  max-height: 700px;
+  width: 100px;
+  list-style: none;
+}
