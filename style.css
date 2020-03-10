@@ -6,6 +6,8 @@ header {
  OR THIS: https://www.jerrysnugget.com/wp-content/uploads/2020/01/iStock-1056445320-scaled.jpg
   background-size: cover;
   background-position: center; */
+  background-color: #9FA1A2;
+  color: #ffffff;
   height: 100px;
 }
 header h1 {
@@ -14,18 +16,47 @@ header h1 {
 }
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-rows: 25% 25% 25% 25%;
+  background-color: #FAFAFA;
+  color: black;
+  margin: 10px 50px 10px 50px;
+}
+.current-call{
+  display:grid;
+  align-items: center;
+  margin-left: 10px;
+}
+.current-call h3 {
+  grid-column: 1;
+  font-size: 2vw;
+}
+.current-call p {
+  grid-column: 2;
+  align-items: start;
+  margin:0;
+  font-size: 8vw;
+
 }
 .fun-fact-spot {
   grid-column: 1;
   grid-row: 2;
+  /* margin-left: 10px; */
+}
+.fun-fact-spot h4 {
+  font-size: 2vw;
+}
+
+.fun-fact {
+  font-size: 1.3vw;
 }
 
 #next-button {
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 3;
+  align-items: center;
   height: 50px;
+  /* margin-left: 10px; */
 }
 
 .not-yet-called {
@@ -36,18 +67,42 @@ main {
   grid-column: 4;
 }
 
-.not-yet-called ol {
-  background-color: lavenderblush;
+.not-yet-called ol, .have-called ol {
+  background-color: #9E81A6;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: auto;
   /* thinking this would make it adjust as items move from one list to the other? MAYBE? */
-  max-height: 700px;
-  width: 100px;
+  max-height: 500px;
+  width: 200px;
   list-style: none;
+  border-radius:4px;
 }
 
 .have-called ol {
   list-style: none;
 }
+
+/* // ========================================================================================= //
+// ========================================================================================= // */
+/* 
+- need to make the current number larger
+- need to make the fun fact larger and stylish
+- style the next button
+- fix the grid layout
+- do i want the divs fixed or adjusting?
+ */
+
+
+ /* 
+ http://web-accessibility.carnegiemuseums.org/design/
+ - keyboard only (no mouse)
+ - large font
+ - do i need to add audio to read the number called (can i even do that?)
+
+
+ // ====== NOTES =====//
+ - never use a div or span for a button when you could use a semantically meaningful button element
+ - font vw to do resizable text 
+ */
