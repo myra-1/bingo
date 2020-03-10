@@ -3,13 +3,11 @@ body {
   font-family: 'Heebo', sans-serif;
 }
 header {
-  /* background-image: url(https://media.istockphoto.com/photos/neon-sign-on-brick-wall-background-bingo-3d-rendering-picture-id1056445336?k=6&m=1056445336&s=612x612&w=0&h=c0qJvkckiVYpYKVHIh0iS8guclmoVxrUtjYDgfjF_3k=);
- OR THIS: https://www.jerrysnugget.com/wp-content/uploads/2020/01/iStock-1056445320-scaled.jpg
-  background-size: cover;
-  background-position: center; */
   background-color: #9FA1A2;
   color: #ffffff;
   height: 100px;
+  width: 100%;
+  background-size: cover;
 }
 header h1 {
   margin: 0px;
@@ -18,7 +16,7 @@ header h1 {
 main {
   display: grid;
   grid-template-columns: 50% 1fr 1fr;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25%;
   grid-gap: 10px;
   background-color: #FAFAFA;
   color: black;
@@ -29,7 +27,13 @@ main {
   align-items: center;
   margin-left: 10px;
 }
-.current-call h3, .fun-fact-spot h3 {
+.current-call h3 {
+  grid-column: 1;
+  justify-self: center;
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+.fun-fact-spot h3 {
   grid-column: 1;
   justify-self: center;
   font-size: 2vw;
@@ -48,6 +52,7 @@ main {
   grid-row: 2;
   align-self: center;
   justify-self: center;
+  padding-left: 50px;
 }
 
 .fun-fact {
@@ -102,6 +107,31 @@ h4 {
   font-family: 'Arvo', serif;
 }
 
+footer {
+  text-align: center;
+  color: #9E81A6;
+  font-size: xx-large;
+}
+
+/* // ========================================================================================= //
+        MOBILE
+// ========================================================================================= // */
+/* /* */
+
+@media only screen and (max-width: 770px) {
+
+  header {
+    width: 100%;
+  }
+  main {
+    
+  }
+}
+
+
+
+
+
 /* // ========================================================================================= //
 // ========================================================================================= // */
 /* 
@@ -124,3 +154,12 @@ h4 {
  - never use a div or span for a button when you could use a semantically meaningful button element
  - font vw to do resizable text 
  */
+
+
+ /* alternate colors
+E6E4D9 - light shades
+8FADB1 - light accent
+84838B - main brand color
+979BA5 - dark accent
+101414 - dark shades
+*/
