@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Heebo', sans-serif;
 }
 header {
   /* background-image: url(https://media.istockphoto.com/photos/neon-sign-on-brick-wall-background-bingo-3d-rendering-picture-id1056445336?k=6&m=1056445336&s=612x612&w=0&h=c0qJvkckiVYpYKVHIh0iS8guclmoVxrUtjYDgfjF_3k=);
@@ -12,7 +13,7 @@ header {
 }
 header h1 {
   margin: 0px;
-  display: flex
+  padding: 30px;
 }
 main {
   display: grid;
@@ -28,24 +29,25 @@ main {
   align-items: center;
   margin-left: 10px;
 }
-.current-call h3 {
+.current-call h3, .fun-fact-spot h3 {
   grid-column: 1;
+  justify-self: center;
   font-size: 2vw;
+  text-transform: uppercase;
 }
 .current-call p {
   grid-column: 2;
   align-items: start;
   margin:0;
   font-size: 8vw;
-
+  font-family: 'Arvo', serif;
 }
+
 .fun-fact-spot {
   grid-column: 1;
   grid-row: 2;
-  /* margin-left: 10px; */
-}
-.fun-fact-spot h4 {
-  font-size: 2vw;
+  align-self: center;
+  justify-self: center;
 }
 
 .fun-fact {
@@ -56,15 +58,34 @@ main {
   grid-column: 1;
   grid-row: 3;
   align-self: center;
+  justify-self: center;
   height: 50px;
+  width: 75%;
+  background-color: #9FA1A2;
+  border-radius: 15px;
+  font-weight: bold;
+}
+#next-button:hover {
+  background-color: #68696B;
+  border-radius: 15px;
+  color: #FAFAFA;
+  font-weight:bold;
+}
+h4 {
+  font-size: 2vw;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .not-yet-called {
   grid-column: 2;
+  justify-self: center;
 }
 
 .have-called {
   grid-column: 3;
+  justify-self: center;
 }
 
 .not-yet-called ol, .have-called ol {
@@ -77,11 +98,8 @@ main {
   max-height: 500px;
   width: 200px;
   list-style: none;
-  border-radius:4px;
-}
-
-.have-called ol {
-  list-style: none;
+  border-radius:15px;
+  font-family: 'Arvo', serif;
 }
 
 /* // ========================================================================================= //
