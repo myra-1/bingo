@@ -13,11 +13,13 @@
 
 <body>
   <header>
-    <h1>TITLE OF PROJECT</h1>
+    <h1>PROJECT</h1>
   </header>
   <main>
     <div class="current-call">
       <h3>CURRENT</h3>
+      <p id="current-call-display"></p>
+      <!-- <button id="test-button">test</button> -->
     </div>
     <div class="fun-fact-spot">
       <h4>Number Fun Fact</h4>
@@ -26,7 +28,7 @@
     <button id="next-button">NEXT</button>
     <div class="not-yet-called">
       <h4>NOT YET CALLED</h4>
-      <ol>
+      <ol id="ol-need-to-call">
         <li data-letter="B" data-number="1">B1</li>
         <li data-letter="B" data-number="2">B2</li>
         <li data-letter="B" data-number="3">B3</li>
@@ -106,6 +108,7 @@
     </div>
     <div class="have-called">
       <h4>CALLED</h4>
+      <ol id="ol-have-called"></ol>
     </div>
   </main>
 </body>

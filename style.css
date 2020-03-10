@@ -1,10 +1,21 @@
+body {
+  margin: 0;
+}
 header {
-  height: 150px;
+  /* background-image: url(https://media.istockphoto.com/photos/neon-sign-on-brick-wall-background-bingo-3d-rendering-picture-id1056445336?k=6&m=1056445336&s=612x612&w=0&h=c0qJvkckiVYpYKVHIh0iS8guclmoVxrUtjYDgfjF_3k=);
+ OR THIS: https://www.jerrysnugget.com/wp-content/uploads/2020/01/iStock-1056445320-scaled.jpg
+  background-size: cover;
+  background-position: center; */
+  height: 100px;
+}
+header h1 {
+  margin: 0px;
+  display: flex
 }
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
 }
 .fun-fact-spot {
   grid-column: 1;
@@ -13,7 +24,7 @@ main {
 
 #next-button {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 4;
   height: 50px;
 }
 
@@ -26,7 +37,7 @@ main {
 }
 
 .not-yet-called ol {
-  background-color: azure;
+  background-color: lavenderblush;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -34,5 +45,9 @@ main {
   /* thinking this would make it adjust as items move from one list to the other? MAYBE? */
   max-height: 700px;
   width: 100px;
+  list-style: none;
+}
+
+.have-called ol {
   list-style: none;
 }
