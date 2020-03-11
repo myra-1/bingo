@@ -14,7 +14,7 @@ let newListItem = document.createElement("li");
 nextButton.addEventListener('click', async () => {
   let theCall = Math.floor(Math.random() * olNeedToCallChildren.length)
   let theElement = olNeedToCallChildren[theCall];
-  console.log(theElement);
+  // console.log(theElement);
   newListItem.appendChild(theElement);
   // olHaveCalled.appendChild(newListItem);
   // ^^ issues with order
