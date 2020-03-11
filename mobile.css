@@ -10,11 +10,51 @@
   }
   
   .current-call h3 {
-    font-size: 2vw;
+    font-size: 6vw;
+  }
+  #current-call-display {
+    font-size: 15vw;
   }
 
   .fun-fact-spot h3 {
-    font-size: 8vw;
+    font-size: 6vw;
+  }
+  .fun-fact {
+    font-size: 6vw;
+    margin-right: 50px;
+    text-align: justify;
+  }
+
+  #next-button {
+    margin: 50px;
+  }
+
+  .not-yet-called {
+    display: flex;
+    flex-direction: column;
+  }
+  .not-yet-called h4 {
+    display: flex;
+    font-size: 5vw;
+    align-self: center;
+  }
+
+  #ol-need-to-call {
+    align-self: center;
+  }
+
+  .have-called {
+    display: flex;
+    flex-direction: column;
+  }
+  .have-called h4 {
+    display: flex;
+    font-size: 5vw;
+    align-self:center;
+  }
+
+  #ol-have-called {
+    align-self: center;
   }
 }
  
