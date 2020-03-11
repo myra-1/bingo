@@ -9,7 +9,7 @@ body {
 }
 header {
   color: #ffffff;
-  height: 100px;
+  height: 75px;
   width: 100%;
   background-size: cover;
   border-bottom: dotted 1px #FAFAFA;
@@ -20,17 +20,16 @@ header h1 {
 }
 body {
   background-image: url("https://i.pinimg.com/originals/43/30/c1/4330c19513981171ac27f0ac56dd3bad.jpg");
-
-
 }
+
 main {
   display: grid;
   grid-template-columns: 50% 1fr 1fr;
-  grid-template-rows: 25% 25% 25%;
-  grid-gap: 10px;
+  grid-template-rows: 33% 33% 33%;
+  /* grid-gap: 10px; */
   /* background-color: #FAFAFA; */
   color: #FAFAFA;
-  margin: 10px 50px 10px 50px;
+  margin: 10px 50px 0px 50px;
 }
 .current-call{
   display:grid;
@@ -39,49 +38,59 @@ main {
 }
 .current-call h3 {
   grid-column: 1;
-  font-size: 2vw;
+  font-size: 4vw;
   text-transform: uppercase;
   margin-left:50px;
-}
-.fun-fact-spot h3 {
-  grid-column: 1;
-  justify-self: center;
-  font-size: 2vw;
-  text-transform: uppercase;
 }
 .current-call p {
   grid-column: 2;
   align-items: start;
   margin:0;
-  font-size: 8vw;
+  font-size: 10vw;
+  text-shadow: 8px 8px 80px;
+}
+.fun-fact-spot h3 {
+  grid-column: 1;
+  justify-self: center;
+  font-size: 4vw;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .fun-fact-spot {
   grid-column: 1;
   grid-row: 2;
-  align-self: center;
+  /* align-self: center; */
   /* justify-self: center; */
   padding-left: 50px;
 }
 
 .fun-fact {
-  font-size: 1.3vw;
-  /* text-shadow: 2px 2px 30px; */
+  font-size: 2vw;
+  text-shadow: 8px 8px 40px;
   /* this was fun  - made it feel like it was being written and then erased and written over*/
+}
+.fun-fact p {
+  margin-top: 30px;
 }
 
 #next-button {
   grid-column: 1;
   grid-row: 3;
-  align-self: center;
+  /* align-self: center; */
   /* justify-self: center; */
-  margin: 50px;
+  margin: 0 50px;
   height: 50px;
   width: 75%;
-  background-color: #9FA1A2;
+  /* background-color: #9FA1A2; */
+  background-color:transparent;
+  color: #FAFAFA;
   border-radius: 15px;
   box-shadow: 2px 2px 2px #68696B;
   font-weight: bold;
+  font-family: chalkFont, sans-serif;
+  font-size: xx-large;
+
 }
 #next-button:hover {
   background-color: #68696B;

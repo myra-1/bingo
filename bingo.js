@@ -24,7 +24,7 @@ nextButton.addEventListener('click', async () => {
   // ^^ setting this properties HTML to equal the elements innerHTML 
 
   // API fun fact about number starts below
-  funFact.innerHTML = "Loading";
+  funFact.innerHTML = "...";
   let number = theElement.getAttribute("data-number");
   const response = await axios.get(`http://numbersapi.com/${number}`)
   const numberFact = response.data
