@@ -17,7 +17,7 @@ nextButton.addEventListener('click', async () => {
   // console.log(theElement);
   newListItem.appendChild(theElement);
   // olHaveCalled.appendChild(newListItem);
-  // ^^ issues with order
+  // ^^ issues with order - instead use below 
   olHaveCalled.insertBefore(theElement, olHaveCalled.firstChild);
   //  ^^ this inserts in order
   currentDisplay.innerHTML = theElement.innerHTML;

@@ -1,25 +1,35 @@
+@font-face {
+  font-family: chalkFont;
+  src: url('DkMidnightChalkerRegular-lGWV.otf');
+}
+
 body {
   margin: 0;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'chalkFont', sans-serif;
 }
 header {
-  background-color: #9FA1A2;
   color: #ffffff;
   height: 100px;
   width: 100%;
   background-size: cover;
+  border-bottom: dotted 1px #FAFAFA;
 }
 header h1 {
   margin: 0px;
   padding: 30px;
+}
+body {
+  background-image: url("https://i.pinimg.com/originals/43/30/c1/4330c19513981171ac27f0ac56dd3bad.jpg");
+
+
 }
 main {
   display: grid;
   grid-template-columns: 50% 1fr 1fr;
   grid-template-rows: 25% 25% 25%;
   grid-gap: 10px;
-  background-color: #FAFAFA;
-  color: black;
+  /* background-color: #FAFAFA; */
+  color: #FAFAFA;
   margin: 10px 50px 10px 50px;
 }
 .current-call{
@@ -29,9 +39,9 @@ main {
 }
 .current-call h3 {
   grid-column: 1;
-  justify-self: center;
   font-size: 2vw;
   text-transform: uppercase;
+  margin-left:50px;
 }
 .fun-fact-spot h3 {
   grid-column: 1;
@@ -44,30 +54,33 @@ main {
   align-items: start;
   margin:0;
   font-size: 8vw;
-  font-family: 'Arvo', serif;
 }
 
 .fun-fact-spot {
   grid-column: 1;
   grid-row: 2;
   align-self: center;
-  justify-self: center;
+  /* justify-self: center; */
   padding-left: 50px;
 }
 
 .fun-fact {
   font-size: 1.3vw;
+  /* text-shadow: 2px 2px 30px; */
+  /* this was fun  - made it feel like it was being written and then erased and written over*/
 }
 
 #next-button {
   grid-column: 1;
   grid-row: 3;
   align-self: center;
-  justify-self: center;
+  /* justify-self: center; */
+  margin: 50px;
   height: 50px;
   width: 75%;
   background-color: #9FA1A2;
   border-radius: 15px;
+  box-shadow: 2px 2px 2px #68696B;
   font-weight: bold;
 }
 #next-button:hover {
@@ -94,7 +107,7 @@ h4 {
 }
 
 .not-yet-called ol, .have-called ol {
-  background-color: #9E81A6;
+  /* background-color: #9E81A6; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -103,8 +116,10 @@ h4 {
   max-height: 500px;
   width: 200px;
   list-style: none;
-  border-radius:15px;
-  font-family: 'Arvo', serif;
+  /* border-radius:15px; */
+  /* box-shadow: 10px 10px 8px #9FA1A2 ; */
+  /* font-family: 'Arvo', serif; */
+  /* border: solid .5px #FAFAFA; */
 }
 
 footer {
@@ -112,6 +127,7 @@ footer {
   color: #9E81A6;
   font-size: xx-large;
 }
+
 
 /* // ========================================================================================= //
         MOBILE
@@ -141,6 +157,7 @@ footer {
 - style the next button
 - fix the grid layout
 - do i want the divs fixed or adjusting?
+- do a starter page?
  */
 
 
