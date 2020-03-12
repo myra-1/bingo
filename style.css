@@ -27,9 +27,12 @@
   font-family: whateverNormal;
   src: url("whatever it takes.ttf")
 }
-
+html {
+  height:100%;
+}
 body {
   margin: 0;
+  height: 100%;
   /* font-family: 'chalkFont', sans-serif; */
   /* font-family: 'Walter Turncoat', cursive; */
 }
@@ -73,6 +76,7 @@ main {
   color: #FAFAFA;
   margin: 10px 50px -100px 50px;
   font-family: whateverNormal;
+  height: 100%;
 }
 .current-call{
   display:grid;
