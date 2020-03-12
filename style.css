@@ -184,8 +184,10 @@ footer {
   color: #FAFAFA;
   font-size: xx-large;
   background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
-  background-position: top;
+  background-position: center;
   height: 100px;
+  margin: 0 -50px;
+  box-shadow: 10px 0px 30px rgba(0,0,0,.7);
   /* margin-top: -100px; */
   /* i hate the extra space but the margin-top negative adds problems on mobile and tablet */
 }
