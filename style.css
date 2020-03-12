@@ -14,6 +14,10 @@
   src: url("/Users/myra/supernovas/unit-1/project/Arsonist-YgPj.ttf");
 } */
 
+/* this font seems cool too: https://www.fontspace.com/dk-crayon-crumble-font-f12602 */
+/* this one seems cool too BUT AGAIN WITH THE NUMBER FOUR - is it some secret font thing where they ruin the fours so you don't use their font?: https://www.dafont.com/dk-coal-brush.font  */
+
+/* font downloaded from: https://www.dafont.com/whatever-it-takes.font */
 @font-face {
   font-family: whateverBold;
   src: url("whatever it takes bold.ttf")
@@ -36,7 +40,7 @@ header {
   background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
   background-position: bottom;
   box-shadow: 0px 10px 8px rgba(0,0,0,.7) ;
-  /* border-bottom: dotted 1px #FAFAFA; */
+  /* the footer has this shadow automatically bc of the position of the image ^^ */
 }
 header h1 {
   margin: 0px;
@@ -119,15 +123,17 @@ main {
   width: 75%;
   background-color:transparent;
   color: #FAFAFA;
-  border-radius: 15px;
-  box-shadow: 2px 2px 2px #68696B;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 1px 1px 80px #68696B;
   font-weight: bold;
-  font-family: chalkFont, sans-serif;
+  font-family: whateverBold;
   font-size: xx-large;
 
 }
 #next-button:hover {
-  background-color: #68696B;
+  background-color: #68696B60;
+  /* 99 at the end of the hex number is the alpha value - added for transparency  */
   border-radius: 15px;
   color: #FAFAFA;
   font-weight:bold;
