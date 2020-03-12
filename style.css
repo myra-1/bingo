@@ -1,11 +1,33 @@
-@font-face {
+/* @font-face {
   font-family: chalkFont;
   src: url('DkMidnightChalkerRegular-lGWV.otf');
+} */
+/* the number four (4) does not look good in this font. it feels like they forgot to design that one */
+
+/* @font-face {
+  font-family: burntWood;
+  src: url("HotelCoralEssex-DY7d.ttf")
+}
+
+@font-face {
+  font-family: arsonist;
+  src: url("/Users/myra/supernovas/unit-1/project/Arsonist-YgPj.ttf");
+} */
+
+@font-face {
+  font-family: whateverBold;
+  src: url("whatever it takes bold.ttf")
+}
+
+@font-face {
+  font-family: whateverNormal;
+  src: url("whatever it takes.ttf")
 }
 
 body {
   margin: 0;
-  font-family: 'chalkFont', sans-serif;
+  /* font-family: 'chalkFont', sans-serif; */
+  /* font-family: 'Walter Turncoat', cursive; */
 }
 header {
   height: 80px;
@@ -18,10 +40,13 @@ header {
 }
 header h1 {
   margin: 0px;
-  padding: 30px;
+  padding: 10px;
   font-size: 50px;
+  /* font-family: arsonist; */
   color: #2b1d0e;
   font-size: 4vw;
+  font-weight:lighter;
+  font-family: whateverBold;
 }
 body {
   background-image: url("https://i.pinimg.com/originals/43/30/c1/4330c19513981171ac27f0ac56dd3bad.jpg");
@@ -34,60 +59,14 @@ body {
   position: relative; */
 }
 
-/* =======TESTING IMAGE STUFF ============= */
-/* body::before {
-  content:'';
-  border-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png") 50 repeat;
-  position: absolute;
-  width: 3px;
-  height: 90%;
-  bottom: 0;
-  left:-7px; 
-}
-
-body::after{
-  content:'';
-  position: absolute;
-  width: 3px;
-  height: 90%;
-  bottom: 0;
-  right:55px;
- 
-} */
-
-/* Image border general */
-/* body::before, body:after {
-  content: "";
-  position: absolute;
-  left: -30px;
-  top: 50%;
-  width: 30px;
-  height: 100%;
-  transform: translateY(-50%);
-  background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
-  background-size: 100% 100%;
-  z-index: 2;
-}
-
-/* Specific to the right border */
-/* body::after{
-  left: auto;
-  right: -30px;
-  top: 50%;
-  transform: translateY(-50%) rotate(180deg);
-} */ 
-
-/* ========== END TEST =========== */
-
 
 main {
   display: grid;
   grid-template-columns: 50% 1fr 1fr;
   grid-template-rows: 33% 33% 33%;
-  /* grid-gap: 10px; */
-  /* background-color: #FAFAFA; */
   color: #FAFAFA;
   margin: 10px 50px 0px 50px;
+  font-family: whateverNormal;
 }
 .current-call{
   display:grid;
@@ -99,6 +78,7 @@ main {
   font-size: 4vw;
   text-transform: uppercase;
   margin-left:50px;
+  font-family: whateverBold;
 }
 .current-call p {
   grid-column: 2;
@@ -106,6 +86,7 @@ main {
   margin:0;
   font-size: 10vw;
   text-shadow: 8px 8px 80px;
+  font-family: whateverBold;
 }
 .fun-fact-spot h3 {
   grid-column: 1;
@@ -118,8 +99,6 @@ main {
 .fun-fact-spot {
   grid-column: 1;
   grid-row: 2;
-  /* align-self: center; */
-  /* justify-self: center; */
   padding-left: 50px;
 }
 
@@ -135,12 +114,9 @@ main {
 #next-button {
   grid-column: 1;
   grid-row: 3;
-  /* align-self: center; */
-  /* justify-self: center; */
   margin: 0 50px;
   height: 50px;
   width: 75%;
-  /* background-color: #9FA1A2; */
   background-color:transparent;
   color: #FAFAFA;
   border-radius: 15px;
@@ -161,6 +137,7 @@ h4 {
   margin-bottom: 0;
   text-align: center;
   text-transform: uppercase;
+  font-family: whateverBold;
 }
 
 .not-yet-called {
@@ -174,7 +151,6 @@ h4 {
 }
 
 .not-yet-called ol, .have-called ol {
-  /* background-color: #9E81A6; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -186,10 +162,6 @@ h4 {
   list-style: none;
   font-size: 2vw;
   text-shadow: 8px 8px 80px;
-  /* border-radius:15px; */
-  /* box-shadow: 10px 10px 8px #9FA1A2 ; */
-  /* font-family: 'Arvo', serif; */
-  /* border: solid .5px #FAFAFA; */
 }
 
 footer {
