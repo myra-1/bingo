@@ -46,21 +46,23 @@ header h1 {
   margin: 0px;
   padding: 10px;
   font-size: 50px;
-  /* font-family: arsonist; */
   color: #2b1d0e;
   font-size: 4vw;
-  font-weight:lighter;
   font-family: whateverBold;
+  text-align: center;
 }
 body {
   background-image: url("https://i.pinimg.com/originals/43/30/c1/4330c19513981171ac27f0ac56dd3bad.jpg");
+  border-image: url("wood_side_border.png") 100;
   border-right: 50px solid;
+  box-shadow: -15px 0 15px -15px inset;
+  /* ^^ this gives me the border i want on the right but not on the left */
   border-left: 50px solid;
   /* idk what transparent does when added after the above ^^ so i removed */
-  border-image: url("wood_side_border.png") 100;
-  /* border-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png") 50; */
-  /* display: block;
-  position: relative; */
+  box-shadow: 15px 0 15px -15px inset;
+  /*  ^^ this gets me on the left but not the right */
+  /* HOW DO I GET BOTH TO WORK */
+  /* https://stackoverflow.com/questions/11997032/how-to-get-box-shadow-on-left-right-sides-only */
 }
 
 
@@ -69,7 +71,7 @@ main {
   grid-template-columns: 50% 1fr 1fr;
   grid-template-rows: 33% 33% 33%;
   color: #FAFAFA;
-  margin: 10px 50px 0px 50px;
+  margin: 10px 50px -100px 50px;
   font-family: whateverNormal;
 }
 .current-call{
@@ -121,7 +123,8 @@ main {
   margin: 0 50px;
   height: 50px;
   width: 75%;
-  background-color:transparent;
+  /* background-color:transparent; */
+  background-color: #68696B50;
   color: #FAFAFA;
   border: none;
   border-radius: 7px;
@@ -132,8 +135,9 @@ main {
 
 }
 #next-button:hover {
-  background-color: #68696B60;
+  /* background-color: #68696B50; */
   /* 99 at the end of the hex number is the alpha value - added for transparency  */
+  background-color:transparent;
   border-radius: 15px;
   color: #FAFAFA;
   font-weight:bold;
@@ -158,7 +162,8 @@ h4 {
 
 .not-yet-called ol, .have-called ol {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  /* ^ not sure I love row over column but this helps bring up the bottom of the page */
   flex-wrap: wrap;
   align-content:space-between;
   height: auto;
@@ -166,7 +171,7 @@ h4 {
   max-height: 500px;
   width: 200px;
   list-style: none;
-  font-size: 2vw;
+  font-size: 2.5vw;
   text-shadow: 8px 8px 80px;
 }
 
@@ -177,7 +182,8 @@ footer {
   background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
   background-position: top;
   height: 100px;
-  margin-top: -100px;
+  /* margin-top: -100px; */
+  /* i hate the extra space but the margin-top negative adds problems on mobile and tablet */
 }
 em {
   color: red;
