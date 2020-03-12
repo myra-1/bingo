@@ -8,22 +8,77 @@ body {
   font-family: 'chalkFont', sans-serif;
 }
 header {
-  color: #ffffff;
-  height: 75px;
+  height: 80px;
   width: 100%;
   background-size: cover;
+  background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
+  background-position: bottom;
+  box-shadow: 0px 10px 8px rgba(0,0,0,.7) ;
   /* border-bottom: dotted 1px #FAFAFA; */
 }
 header h1 {
   margin: 0px;
   padding: 30px;
   font-size: 50px;
+  color: #2b1d0e;
+  font-size: 4vw;
 }
 body {
-  border: 30px solid transparent;
   background-image: url("https://i.pinimg.com/originals/43/30/c1/4330c19513981171ac27f0ac56dd3bad.jpg");
-  border-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png") 50 repeat;
+  border-right: 50px solid;
+  border-left: 50px solid;
+  /* idk what transparent does when added after the above ^^ so i removed */
+  border-image: url("wood_side_border.png") 100;
+  /* border-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png") 50; */
+  /* display: block;
+  position: relative; */
 }
+
+/* =======TESTING IMAGE STUFF ============= */
+/* body::before {
+  content:'';
+  border-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png") 50 repeat;
+  position: absolute;
+  width: 3px;
+  height: 90%;
+  bottom: 0;
+  left:-7px; 
+}
+
+body::after{
+  content:'';
+  position: absolute;
+  width: 3px;
+  height: 90%;
+  bottom: 0;
+  right:55px;
+ 
+} */
+
+/* Image border general */
+/* body::before, body:after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  width: 30px;
+  height: 100%;
+  transform: translateY(-50%);
+  background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
+  background-size: 100% 100%;
+  z-index: 2;
+}
+
+/* Specific to the right border */
+/* body::after{
+  left: auto;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+} */ 
+
+/* ========== END TEST =========== */
+
 
 main {
   display: grid;
@@ -130,6 +185,7 @@ h4 {
   width: 200px;
   list-style: none;
   font-size: 2vw;
+  text-shadow: 8px 8px 80px;
   /* border-radius:15px; */
   /* box-shadow: 10px 10px 8px #9FA1A2 ; */
   /* font-family: 'Arvo', serif; */
