@@ -2,54 +2,41 @@
   main {
     display: unset;
   }
-  header {
-    width: 100%;
-  }
-
   .current-call h3 {
     font-size: 6vw;
+    padding: 40px 0 0 40px;
   }
   #current-call-display {
     font-size: 15vw;
+    padding-top: 40px;
   }
 
   .fun-fact-spot h3 {
     font-size: 6vw;
+    margin: 50px;
   }
   .fun-fact {
     font-size: 6vw;
-    margin-right: 50px;
+    margin: 0 50px 0 50px;
     text-align: justify;
   }
 
   #next-button {
-    margin: 50px;
+    margin: 50px 0 50px 80px;
   }
 
-  .not-yet-called {
+  .not-yet-called, .have-called {
     display: flex;
     flex-direction: column;
   }
-  .not-yet-called h4 {
+  .not-yet-called h4, .have-called h4 {
     display: flex;
     font-size: 5vw;
     align-self: center;
   }
 
-  #ol-need-to-call {
+  #ol-need-to-call, #ol-have-called {
     align-self: center;
-  }
-
-  .have-called {
-    display: flex;
-    flex-direction: column;
-  }
-  .have-called h4 {
-    display: flex;
     font-size: 5vw;
-    align-self:center;
   }
-
-  #ol-have-called {
-    align-self: center;
-  }
+}

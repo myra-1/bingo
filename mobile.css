@@ -1,14 +1,8 @@
 @media only screen and (max-width: 415px){
 
-  header {
-    width: 100%;
-    color: blue;
-  }
-
   main {
     display: unset;
   }
-  
   .current-call h3 {
     font-size: 6vw;
   }
@@ -29,32 +23,18 @@
     margin: 50px;
   }
 
-  .not-yet-called {
+  .not-yet-called, .have-called {
     display: flex;
     flex-direction: column;
   }
-  .not-yet-called h4 {
+  .not-yet-called h4, .have-called h4 {
     display: flex;
     font-size: 5vw;
     align-self: center;
   }
-
-  #ol-need-to-call {
+  #ol-need-to-call, #ol-have-called {
     align-self: center;
-  }
-
-  .have-called {
-    display: flex;
-    flex-direction: column;
-  }
-  .have-called h4 {
-    display: flex;
     font-size: 5vw;
-    align-self:center;
-  }
-
-  #ol-have-called {
-    align-self: center;
   }
 }
  
