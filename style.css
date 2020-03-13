@@ -1,26 +1,7 @@
-/* @font-face {
-  font-family: chalkFont;
-  src: url('DkMidnightChalkerRegular-lGWV.otf');
-} */
-/* the number four (4) does not look good in this font. it feels like they forgot to design that one */
-
-/* @font-face {
-  font-family: burntWood;
-  src: url("HotelCoralEssex-DY7d.ttf")
-}
-
-@font-face {
-  font-family: arsonist;
-  src: url("/Users/myra/supernovas/unit-1/project/Arsonist-YgPj.ttf");
-} */
-
-/* this font seems cool too: https://www.fontspace.com/dk-crayon-crumble-font-f12602 */
-/* this one seems cool too BUT AGAIN WITH THE NUMBER FOUR - is it some secret font thing where they ruin the fours so you don't use their font?: https://www.dafont.com/dk-coal-brush.font  */
-
-/* font downloaded from: https://www.dafont.com/whatever-it-takes.font */
 @font-face {
   font-family: whateverBold;
   src: url("whatever it takes bold.ttf")
+  /* font downloaded from: https://www.dafont.com/whatever-it-takes.font */
 }
 
 @font-face {
@@ -31,7 +12,6 @@ html {
   height:100%;
 }
 header {
-  /* height: 80px; */
   width: 100%;
   background-size: cover;
   background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
@@ -57,7 +37,6 @@ body {
   box-shadow: -15px 0 15px -15px inset;
   /* ^^ this gives me the border i want on the right but not on the left */
   border-left: 50px solid;
-  /* idk what transparent does when added after the above ^^ so i removed */
   box-shadow: 15px 0 15px -15px inset;
   /*  ^^ this gets me on the left but not the right */
   /* HOW DO I GET BOTH TO WORK */
@@ -123,8 +102,8 @@ main {
   margin: 0 50px;
   height: 50px;
   width: 75%;
-  /* background-color:transparent; */
   background-color: #68696B50;
+  /* 50 at the end of the hex number is the alpha value - added for transparency  */
   color: #FAFAFA;
   border: none;
   border-radius: 7px;
@@ -135,8 +114,6 @@ main {
 
 }
 #next-button:hover {
-  /* background-color: #68696B50; */
-  /* 99 at the end of the hex number is the alpha value - added for transparency  */
   background-color:transparent;
   border-radius: 15px;
   color: #FAFAFA;
@@ -163,11 +140,8 @@ h4 {
 .not-yet-called ol, .have-called ol {
   display: flex;
   flex-direction: column;
-  /* ^ not sure I love row over column but this helps bring up the bottom of the page */
   flex-wrap: wrap;
-  align-content:space-between;
-  height: auto;
-  /* thinking this would make it adjust as items move from one list to the other? MAYBE? */
+  align-content:space-around;
   max-height: 500px;
   width: 200px;
   list-style: none;
@@ -176,73 +150,9 @@ h4 {
 }
 
 footer {
-  text-align: center;
-  color: #FAFAFA;
-  font-size: xx-large;
   background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
   background-position: top;
   height: 100px;
-  /* height: 100px;
-  margin: 0 -50px;
+  /* margin: 0 -50px;
   box-shadow: 10px 0px 30px rgba(0,0,0,.7); */
-  /* margin-top: -100px; */
-  /* i hate the extra space but the margin-top negative adds problems on mobile and tablet */
 }
-em {
-  color: red;
-}
-
-
-/* // ========================================================================================= //
-        MOBILE
-// ========================================================================================= // */
-/* /* */
-
-/* @media only screen and (max-height: 812px) and (max-width: 375px) {
-
-  header {
-    width: 100%;
-    color: blue;
-  }
-  main {
-
-  }
-} */
-
-
-
-
-
-/* // ========================================================================================= //
-// ========================================================================================= // */
-/* 
-- need to make the current number larger
-- need to make the fun fact larger and stylish
-- style the next button
-- fix the grid layout
-- do i want the divs fixed or adjusting?
-- do a starter page?
- */
-
-
- /* 
- http://web-accessibility.carnegiemuseums.org/design/
- - keyboard only (no mouse)
- - large font
- - do i need to add audio to read the number called (can i even do that?)
-
-
- // ====== NOTES =====//
- - never use a div or span for a button when you could use a semantically meaningful button element
- - font vw to do resizable text 
- */
-
-
- /* alternate colors
-E6E4D9 - light shades
-8FADB1 - light accent
-84838B - main brand color
-979BA5 - dark accent
-101414 - dark shades
-*/
-

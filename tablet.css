@@ -53,11 +53,3 @@
   #ol-have-called {
     align-self: center;
   }
-
-  /* .tablet {
-    display: grid;
-    grid-column-start: 3;
-  } */
-}
-
-/* what if on tablet (and mobile) i do a toggle between called & not called */
