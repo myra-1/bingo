@@ -12,7 +12,6 @@ html {
   height:100%;
 }
 header {
-  /* width: 100%; */
   background-size: cover;
   background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
   background-position: bottom;
@@ -31,6 +30,7 @@ header h1 {
 body {
   margin: 0;
   /* height: 100%; */
+  /* ^^ this helps with the moving borders but messes with the footer */
   background-image: url("https://i.pinimg.com/originals/43/30/c1/4330c19513981171ac27f0ac56dd3bad.jpg");
   border-image: url("wood_side_border.png") 100;
   border-right: 50px solid;
@@ -49,7 +49,6 @@ main {
   grid-template-columns: 50% 1fr 1fr;
   grid-template-rows: 33% 33% 33%;
   color: #FAFAFA;
-  /* margin: 10px 50px -100px 50px; */
   font-family: whateverNormal;
   height: 100%;
 }
@@ -90,7 +89,7 @@ main {
 .fun-fact {
   font-size: 2vw;
   text-shadow: 8px 8px 40px;
-  /* this was fun  - made it feel like it was being written and then erased and written over*/
+  /* this is fun  - made it feel like it was being written and then erased and written over*/
 }
 .fun-fact p {
   margin-top: 30px;
@@ -154,5 +153,9 @@ footer {
   background-position: top;
   height: 100px;
   /* margin: 0 -50px;
-  box-shadow: 10px 0px 30px rgba(0,0,0,.7); */
+  box-shadow: 10px 0px 30px rgba(0,0,0,.7); 
+  ^this helps if I add height: 100% to body to get borders to stop moving
+  need to then center the image and add box-shadow make it blend better
+  leaving incase I want to come back and play with this
+  */
 }

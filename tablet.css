@@ -17,7 +17,8 @@
   }
   .fun-fact {
     font-size: 6vw;
-    margin: 0 50px 0 50px;
+    /* margin: 0 50px 0 50px; */
+    /* this works for tablet but messes with iPhone. Why */
     text-align: justify;
   }
 

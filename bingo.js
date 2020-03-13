@@ -15,7 +15,7 @@ nextButton.addEventListener('click', async () => {
   let theElement = olNeedToCallChildren[theCall];
   newListItem.appendChild(theElement);
   // olHaveCalled.appendChild(newListItem);
-  // ^^ issues with order - instead use below 
+  // ^^ issues with order on the above- instead use below 
   olHaveCalled.insertBefore(theElement, olHaveCalled.firstChild);
   currentDisplay.innerHTML = theElement.innerHTML;
   // ^^ setting this properties HTML to equal the elements innerHTML 
