@@ -30,14 +30,8 @@
 html {
   height:100%;
 }
-body {
-  margin: 0;
-  height: 100%;
-  /* font-family: 'chalkFont', sans-serif; */
-  /* font-family: 'Walter Turncoat', cursive; */
-}
 header {
-  height: 80px;
+  /* height: 80px; */
   width: 100%;
   background-size: cover;
   background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
@@ -55,6 +49,8 @@ header h1 {
   text-align: center;
 }
 body {
+  margin: 0;
+  /* height: 100%; */
   background-image: url("https://i.pinimg.com/originals/43/30/c1/4330c19513981171ac27f0ac56dd3bad.jpg");
   border-image: url("wood_side_border.png") 100;
   border-right: 50px solid;
@@ -74,7 +70,7 @@ main {
   grid-template-columns: 50% 1fr 1fr;
   grid-template-rows: 33% 33% 33%;
   color: #FAFAFA;
-  margin: 10px 50px -100px 50px;
+  /* margin: 10px 50px -100px 50px; */
   font-family: whateverNormal;
   height: 100%;
 }
@@ -166,7 +162,7 @@ h4 {
 
 .not-yet-called ol, .have-called ol {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* ^ not sure I love row over column but this helps bring up the bottom of the page */
   flex-wrap: wrap;
   align-content:space-between;
@@ -184,10 +180,11 @@ footer {
   color: #FAFAFA;
   font-size: xx-large;
   background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-border-bottom.png");
-  background-position: center;
+  background-position: top;
   height: 100px;
+  /* height: 100px;
   margin: 0 -50px;
-  box-shadow: 10px 0px 30px rgba(0,0,0,.7);
+  box-shadow: 10px 0px 30px rgba(0,0,0,.7); */
   /* margin-top: -100px; */
   /* i hate the extra space but the margin-top negative adds problems on mobile and tablet */
 }
